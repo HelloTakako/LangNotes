@@ -23,6 +23,6 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/blog/index.jsx", "pages/clock.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/blog/index.jsx", "pages/clock.jsx", "components/RandomMarathiAlphabetImages.jsx", "components/DrawingPad.jsx"],
   "exclude": ["node_modules"]
 }

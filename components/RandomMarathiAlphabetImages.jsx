@@ -5,8 +5,8 @@ const getRandomImage = () => {
   return `/assets/images/pages/writing/marathi-alphabets/${imageNumber}.png`;
 };
 
-const RandomImage: React.FC = () => {
-  const [imageSrc, setImageSrc] = useState<string>('');
+const RandomMarathiAlphabetImages = () => {
+  const [imageSrc, setImageSrc] = useState('');
 
   useEffect(() => {
     setImageSrc(getRandomImage());
@@ -45,4 +45,4 @@ const RandomImage: React.FC = () => {
   );
 };
 
-export default RandomImage;
+export default RandomMarathiAlphabetImages;

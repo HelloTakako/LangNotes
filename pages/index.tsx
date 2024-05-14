@@ -19,7 +19,7 @@ export default function Home() {
 
         {/* Don't add className to <Link> tag, add it to <div> tag. */}
         <div className="grid">
-          <Link className="card" href="writing">
+          <Link className="card" href="/writing">
             <div className="card">
               <h3>Writing Tags &rarr;</h3>
               <p>Practice Marathi writing</p>

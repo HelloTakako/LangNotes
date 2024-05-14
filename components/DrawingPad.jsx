@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import CanvasDraw from 'react-canvas-draw';
 
-const DrawingPad: React.FC = () => {
+const DrawingPad= () => {
   const canvasRef = useRef<CanvasDraw>(null);
 
   const handleClear = () => {
