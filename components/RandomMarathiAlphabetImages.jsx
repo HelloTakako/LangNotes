@@ -22,25 +22,22 @@ const RandomMarathiAlphabetImages = () => {
       <button className="button" onClick={handleRefresh}>Refresh Image</button>
 
       <style jsx>{`
-      .container {
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .image {
-        height:200px;
-        margin-right: 20px;
-      }
-          .button {
-            padding: 15px;
-            font-size: 20px;
-            &:first-of-type {
-              margin-right: 20px;
-            }
-          }
-        `}
-      </style>
+        .container {
+          width: 100vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .image {
+          height: 200px;
+          margin-bottom: 20px;
+        }
+        .button {
+          padding: 15px;
+          margin-left: 20px;
+          font-size: 20px;
+        }
+      `}</style>
     </div>
   );
 };
