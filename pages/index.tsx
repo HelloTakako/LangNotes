@@ -4,7 +4,6 @@ import React from 'react';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import {Button} from '@nextui-org/react';
 
 export default function Home() {
   return (

@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import CanvasDraw from 'react-canvas-draw';
+import RandomMarathiAlphabetImages from './RandomMarathiAlphabetImages';
 
 const DrawingPad = () => {
   const canvasRef = useRef(null);
@@ -18,11 +19,12 @@ const DrawingPad = () => {
 
   return (
     <div>
+      <RandomMarathiAlphabetImages handleClear={handleClear}  />
       <CanvasDraw 
         ref={canvasRef}
         brushRadius={2}
         lazyRadius={0}
-        canvasWidth={800}
+        canvasWidth={600}
         canvasHeight={600}
         brushColor="#000" 
       />

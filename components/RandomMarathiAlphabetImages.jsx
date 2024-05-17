@@ -5,7 +5,7 @@ const getRandomImage = () => {
   return `/assets/images/pages/writing/marathi-alphabets/${imageNumber}.png`;
 };
 
-const RandomMarathiAlphabetImages = () => {
+const RandomMarathiAlphabetImages = ({handleClear}) => {
   const [imageSrc, setImageSrc] = useState('');
 
   useEffect(() => {
@@ -14,6 +14,7 @@ const RandomMarathiAlphabetImages = () => {
 
   const handleRefresh = () => {
     setImageSrc(getRandomImage());
+    handleClear();
   };
 
   return (
@@ -23,7 +24,6 @@ const RandomMarathiAlphabetImages = () => {
 
       <style jsx>{`
         .container {
-          width: 100vw;
           display: flex;
           align-items: center;
           justify-content: center;

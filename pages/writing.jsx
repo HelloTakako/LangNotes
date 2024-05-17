@@ -16,8 +16,8 @@ export default function Writing() {
 
       <Header />
       <main>
-        <h2>&#9998; Writing practice</h2>
-        <RandomImage />
+        <h2>Writing practice</h2>
+        {/* <RandomImage /> */}
         <DrawingPad />
       </main>
 
@@ -33,7 +33,8 @@ export default function Writing() {
         }
 
         main {
-          padding: 5rem 0;
+          max-width: 100vw;
+          padding: 1rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;

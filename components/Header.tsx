@@ -12,14 +12,26 @@ export default function Header() {
       </ul>
 
       <style jsx>{`
+        .global-nav {
+          width: inherit;
+          background: #666;
+        }
         .global-nav ul {
+          width: inherit;
           display: flex;
-          justify-content: space-between;
+          justify-content: center;
+          gap: 20px;
           padding: 0;
+          width: 100vw;
         }
         .global-nav ul li {
           list-style: none;
+          a {
+            color: white;
+            font-weight: bold;
+          }
         }
+
       `}</style>
     </nav>
   );
