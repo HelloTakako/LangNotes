@@ -8,37 +8,7 @@ export default function Header() {
         <li>
           <Link href="/">Home</Link>
         </li>
-        <li>
-          <Link href="/meta-tags">Meta Tags</Link>
-        </li>
-        <li>
-          <Link href="/react-hooks">React Hooks</Link>
-        </li>
-        <li>
-          <Link href="/graphql">GraphQL</Link>
-        </li>
-        <li>
-          <Link href="/keyboard-shortcuts">Keyboard Shortcuts</Link>
-        </li>
-        <li>
-          <Link href="/git">Git</Link>
-        </li>
-        {/* <li>
-          <Link href="/robots-txt">
-            robots.txt
-          </Link>
-        </li>
-        <li>
-          <Link href="/htaccess">
-            .htaccess
-          </Link>
-        </li> */}
-        <li>
-          <Link href="/useful-links">Useful Links</Link>
-        </li>
-        <li>
-          <Link href="/blog">Blog</Link>
-        </li>
+        
       </ul>
 
       <style jsx>{`

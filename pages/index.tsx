@@ -4,6 +4,7 @@ import React from 'react';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import {Button} from '@nextui-org/react';
 
 export default function Home() {
   return (
@@ -17,11 +18,10 @@ export default function Home() {
       <main>
         <h1 className="title">&#9998;Lang Notes</h1>
 
-        {/* Don't add className to <Link> tag, add it to <div> tag. */}
         <div className="grid">
-          <Link className="card" href="/writing">
+          <Link href="/writing">
             <div className="card">
-              <h3>Writing Tags &rarr;</h3>
+              <h3>Writing &rarr;</h3>
               <p>Practice Marathi writing</p>
             </div>
           </Link>
