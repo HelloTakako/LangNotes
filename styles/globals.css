@@ -1,5 +1,4 @@
-@import './reset.css';
-@import './layouts.css';
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,64 +8,46 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-        Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-        sans-serif;
+    font-family: sans-serif;
 }
 
 * {
     box-sizing: border-box;
 }
 
+footer {
+    padding: 20px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
 
-@layer components {
-    .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    .title a {
-        color: #0070f3;
-        text-decoration: none;
-    }
-
-    .title a:hover,
-    .title a:focus,
-    .title a:active {
-        text-decoration: underline;
-    }
-
-    .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-    }
-
-    .title,
-    .description {
-        text-align: center;
-    }
-
-    .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-    }
-
-    code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-    }
+.container {
+    @apply p-6 w-screen max-w-[400px] mx-auto
 }
+
+.button {
+    @apply px-3 py-2 mr-[20px] text-[18px] border-[1px] rounded-md bg-[#888] text-white
+}
+
+/* marathi fonts */
+.marathi-regular {
+    font-family: "Tiro Devanagari Marathi", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .marathi-regular-italic {
+    font-family: "Tiro Devanagari Marathi", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  

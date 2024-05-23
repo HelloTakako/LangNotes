@@ -20,30 +20,20 @@ const DrawingPad = () => {
   return (
     <div>
       <RandomMarathiAlphabetImages handleClear={handleClear}  />
-      <CanvasDraw 
-        ref={canvasRef}
-        brushRadius={2}
-        lazyRadius={0}
-        canvasWidth={600}
-        canvasHeight={600}
-        brushColor="#000" 
-      />
+      <div className='flex justify-center w-full overflow-hidden'>
+        <CanvasDraw 
+          ref={canvasRef}
+          brushRadius={2}
+          lazyRadius={0}
+          brushColor="#000" 
+        />
+      </div>
 
       <br/>
-      <div style={{ maxWidth: '100vw', margin: '0 auto' }}>
+      <div className='w-full flex justify-center'>
         <button className="button" onClick={handleClear}>Clear</button>
         <button className="button" onClick={handleUndo}>Undo</button>
       </div>
-
-      <style jsx global>{`
-        .button {
-          padding: 15px;
-          font-size: 20px;
-          &:first-of-type {
-            margin-right: 20px;
-          }
-        }
-      `}</style>
     </div>
   );
 };
