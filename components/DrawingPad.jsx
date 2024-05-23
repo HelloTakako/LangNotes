@@ -20,7 +20,7 @@ const DrawingPad = () => {
   return (
     <div>
       <RandomMarathiAlphabetImages handleClear={handleClear}  />
-      <div className='flex justify-center w-full overflow-hidden'>
+      <div className='flex justify-center w-full overflow-hidden border-[2px]'>
         <CanvasDraw 
           ref={canvasRef}
           brushRadius={2}
