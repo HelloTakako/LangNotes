@@ -23,7 +23,7 @@ const DrawingPad = () => {
     <div>
       <RandomMarathiAlphabetImages handleClear={handleClear} />
       <div className="relative flex justify-center w-full overflow-hidden border-[2px]">
-        {character && <p className='top-1/2 -translate-y-1/2 text-[350px] absolute opacity-10 -z-1'>{character.char}</p>}
+        {character && <p className='h-full marathi-regular top-1/2 -translate-y-1/2 origin-center text-[320px] absolute opacity-10 -z-1'>{character.char}</p>}
         <div className='relative canvas-wrapper'>
           <CanvasDraw
             ref={canvasRef}

@@ -30,14 +30,18 @@ const RandomMarathiAlphabetImages = ({ handleClear }) => {
   return (
     <div className='w-full'>
       {character && (
-        <div className="flex items-center">
-          <h3 className="text-[70px] marathi-regular mr-6 ml-3">{character.char}</h3>
-          <p className='text-[24px] mr-[5px]'>[{character.pronunciation}]</p>
-          {/* <HiMiniSpeakerWave size={30}/> */}
-          <button className="ml-auto" onClick={handleRefresh}>
-            <IoArrowForwardCircleSharp size={30} />
-          </button>
-        </div>
+        <>
+          <div className="flex items-center gap-6">
+            <h3 className="text-[70px] marathi-regular ml-3">{character.char}</h3>
+            <p className='text-[24px] text-[#aaa]'>{character.roman}</p>
+            <p className='text-[24px] mr-[5px]'>[{character.pronunciation}]</p>
+            {/* <HiMiniSpeakerWave size={30}/> */}
+            <button className="ml-auto" onClick={handleRefresh}>
+              <IoArrowForwardCircleSharp size={30} />
+            </button>
+          </div>
+          
+        </>
       )}
       {/* {imageSrc && <img className="image" src={imageSrc} alt="Randomly picked" />} */}
     </div>
